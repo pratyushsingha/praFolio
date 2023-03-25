@@ -5,13 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Head from 'next/head'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
+
 
 const DarkModeToggle = dynamic(() => import('dark-mode-toggle-animation'), { ssr: false })
 
 export default function Layout({ children }) {
+
   const [theme, setTheme] = useLocalStorage('theme', 'light')
 
   useEffect(() => {
