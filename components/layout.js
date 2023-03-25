@@ -48,7 +48,6 @@ export default function Layout({ children }) {
       <Head>
         <title>pratyush Singha</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <script defer data-domain="katherineoelsner.com" src="https://plausible.io/js/plausible.js"></script> */}
       </Head>
       <div
         style={{ minWidth: '24rem', maxWidth: '37rem' }}
